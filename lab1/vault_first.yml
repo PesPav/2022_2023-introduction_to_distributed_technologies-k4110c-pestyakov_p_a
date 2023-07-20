@@ -1,0 +1,12 @@
+apiVersion: v1 # Версия API Kubernetes
+kind: Pod # Объект типа "Pod"
+metadata:
+  name: vault-pod # Идентификация имени пода
+  labels:
+    app: vault # Для идентификации объекта метка "vault" нашего пода
+spec:
+  containers:
+  - name: vault # Имя контейнера
+    image: hashicorp/vault:latest # Образ контейнера внутри пода с тегом "latest"
+    ports:
+    - containerPort: 8200 # Прокидываем порт
