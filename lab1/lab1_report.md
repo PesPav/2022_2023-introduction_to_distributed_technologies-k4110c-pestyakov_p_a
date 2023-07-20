@@ -100,7 +100,7 @@ minikube kubectl -- logs service/vault-pod
 minikube stop
 ```
 ---
--Схема организации контейнера и сервиса:
+- Схема организации контейнера и сервиса:
 
 >![diagram](image/img8.jpg)
 
