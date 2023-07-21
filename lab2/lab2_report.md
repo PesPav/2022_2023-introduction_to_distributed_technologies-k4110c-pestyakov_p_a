@@ -4,7 +4,7 @@ Course: [Introduction to distributed technologies](https://github.com/itmo-ict-f
 Year: 2022/2023  
 Group: K4110c  
 Author: Pestryakov Pavel Andreevich  
-Lab: Lab1  
+Lab: Lab2  
 Date of create: 20.07.2023  
 Date of finished: 21.07.2023  
 
