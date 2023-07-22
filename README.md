@@ -8,6 +8,9 @@
 
 ### [Лабораторная работа №3 "Сертификаты и "секреты" в Minikube, безопасное хранение данных."](lab3/lab3_report.md)
 
+### [Лабораторная работа №4 "Сети связи в Minikube, CNI и CoreDNS"](lab4/lab4_report.md)
+
 ## Статья
 
+:eyes: coming soon
 
