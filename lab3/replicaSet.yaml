@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: front-replicaset
+  labels:
+    app: lab3app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: lab3app
+  template:
+    metadata:
+      labels:
+        app: lab3app
+    spec:
+      containers:
+      - name: front-container
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REACT_APP_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: front-configmap
+              key: react_app_user_name
+        - name: REACT_APP_COMPANY_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: front-configmap
+              key: react_app_company_name
