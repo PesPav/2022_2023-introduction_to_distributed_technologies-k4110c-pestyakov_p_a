@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-app-lab4
+  labels:
+    app: front-app-lab4
+spec:
+  replicas: 2 # кол-во pod
+  selector: # для выбора pod'ов 
+    matchLabels:
+      app: front-app-lab4 # метка для подов, управляемых под этим развертыванием
+  template:
+    metadata:
+      labels:
+        app: front-app-lab4
+    spec:
+      containers: # определяем список контейнеров, развернутых внутри пода
+      - name: front-container
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REACT_APP_USERNAME
+          value: Pavel
+        - name: REACT_APP_COMPANY_NAME
+          value: ITMO
