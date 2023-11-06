@@ -12,5 +12,9 @@
 
 ## Статья
 
-:eyes: coming soon
+[__CRD для Kubernetes__](https://medium.com/@PesPav/fce4abec8c47)
+
+>![Что такое CRD и чем он полезен?](https://miro.medium.com/v2/resize:fit:828/format:webp/1*2h-hMVfcmPISYa0-UjiXUA.png)
+
+
 
